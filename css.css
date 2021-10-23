@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+   float: left;
+    padding: 15px;
+  }
+  
+  html {
+    background-color: black;
+    font-family: "Lucida Sans", sans-serif;
+  }
+
+  
+   /* Nav Bar */
+  .nav-flex {
+      display: flex;
+      align-items: center;
+    background-color: #141414;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    gap: 30px;
+
+}
+.nav-flex div {
+  
+}
+ 
+  .nav-png{
+     
+      flex-grow: 0.49;
+}
+.nav-png img {
+  width: 25px;
+margin-left: 10px;
+}
+
+    .nav-home{
+    
+    }
+    .nav-coding{
+
+    }
+    .nav-front{
+
+    }
+    .nav-ondemand{
+
+    }
+    .nav-blog{
+      flex-grow: 0.49;
+    }
+    .nav-hiring button{
+      color: white;
+      border: none;
+      padding: 13px 23px 13px 23px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5E5DF0;
+      box-shadow: 0px 1px 8px 1px #5E5DF0;
+      
+
+    }
+    .nav-hiring button:hover{      
+      animation-name: buttonhire;
+      animation-duration: 5s;
+      animation-iteration-count:infinite;
+      
+    }
+    @keyframes buttonhire {
+      0%   {background-color:#CB5EEE ; }
+      25%  {background-color:#4BE1EC;color:  black}
+      50%  {background-color:#4BE1EC;  color:  black;}
+      75%  {background-color:#CB5EEE; }
+      100% {background-color:#CB5EEE; }
+    }
+        /* Nav Bar end */ 
+
+        /* flex for tex start*/ 
+  .flex-textbox{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 50px;
+    padding-top: 120px;
+    
+  }
+  .flex-textbox div{
+   
+  }
+.maintext{
+  color: white;
+  text-align: center;
+font-size: 27px;
+font-weight: bold;
+}
+.maintext span {
+  background: -webkit-linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Undermaintext{
+  text-align: center;
+  font-size: 21px;
+  font-weight:bold;
+  color: rgb(146, 146, 146);
+ 
+}
+.Undermaintext span {
+  color: rgb(255, 255, 255);
+}
+.button button {
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 13px 30px 13px 30px;
+  animation-name: vercarreras;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  
+} 
+@keyframes vercarreras {
+  0%   {background-color:#CB5EEE ; }
+  25%  {background-color:#4BE1EC;color:  black}
+  50%  {background-color:#4BE1EC;  color:  black;}
+  75%  {background-color:#CB5EEE; }
+  100% {background-color:#CB5EEE; }
+}
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    .nav-home{
+    display: none;
+    }
+    .nav-coding{
+      display: none;
+    }
+    .nav-front{
+      display: none;
+    }
+    .nav-ondemand{
+      display: none;
+    }
+    .nav-blog{
+      display: none;
+    }
+    .nav-hiring{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) { 
+    .maintext{
+      max-width: 50%;
+    }
+  
+  .Undermaintext{
+    max-width: 50%;
+  }
+}
